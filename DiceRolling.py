@@ -2,7 +2,7 @@ from random import randint
 from time import sleep
 
 def user_guess():
-    guess = int(raw_input("Enter your guess: ")) #if you do not enter int here then prog will give wrong output
+    guess = int(raw_input("Enter your guess: "))
     return guess #telling to store the value of guess
 
 def dice_roll(sides_no):
@@ -11,7 +11,7 @@ def dice_roll(sides_no):
     max_no = sides_no * 2
     total_no = first_roll + second_roll
     print "The maximum value you could select is; %d" % (max_no)
-    guess = user_guess() #telling to go to user_guess function
+    guess = user_guess()
     if guess > max_no:
         print "You cannot exceed beyond the specified value"
     else:
