@@ -3,7 +3,7 @@ from time import sleep
 
 def user_guess():
     guess = int(raw_input("Enter your guess: "))
-    return guess #telling to store the value of guess
+    return guess
 
 def dice_roll(sides_no):
     first_roll = randint(1, sides_no)
